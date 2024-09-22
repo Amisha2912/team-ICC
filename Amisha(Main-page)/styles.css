@@ -125,18 +125,18 @@ hr {
 /*-----------hero-section--------*/
 .hero-section{
     background-color: #00175F;
-    height: 100vh;
+    height: 120vh;
     width:100%;
     position: relative;
 }
 .hero-image{
-    background-image:url('https://images.icc-cricket.com/image/upload/t_ratio16_9-size50/prd/o6otfpue4lmzlvdf5ovm');
+    background-image: linear-gradient(to top,rgba(0,0,255,0.6),rgba(0,0,0,0.4)),url('https://images.icc-cricket.com/image/upload/t_ratio16_9-size50/prd/o6otfpue4lmzlvdf5ovm');
     background-size: cover;
     background-repeat: no-repeat;
     width:97%;
     border-radius:20px;
     margin:20px;
-    height:80vh;
+    height:75vh;
     position:absolute;
 
 }
@@ -231,4 +231,61 @@ nav{
         font-size:2.5rem;
         font-weight: 700;
     }
+}
+
+
+/*------image-section-------*/
+
+.images {
+    display: flex;
+    gap: 20px; 
+    padding: 0 20px;
+    overflow-x: auto; 
+    width: 100vw;
+    scroll-behavior: smooth;
+    position: absolute; /* this is absolute within the header */
+    bottom: 0;
+}
+
+
+.img {
+    position: relative;
+    width: 23vw; /* Fixed width for the cards */
+    flex:0 0 23vw;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a card effect */
+    background-color: white;
+}
+
+/* Images inside the container */
+.img img {
+    width: 100%;
+    height: 450px;
+    border-radius:20px;
+}
+
+/* Text overlay on the image */
+.para {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8),transparent);
+}
+
+/* Styling for the text */
+.para span {
+    font-size: 14px;
+}
+
+.para h2 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: bold;
 }
