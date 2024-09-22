@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100%;
+    max-width:100vw;
+}
+
+.top-section{
+    display:flex;
+    height:30vh;
+    width:30vw;
+}
+.box{
+    display:flex;
+    hr{
+        width:30vw;
+    }
+}
