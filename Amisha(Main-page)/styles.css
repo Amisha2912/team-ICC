@@ -289,3 +289,138 @@ nav{
     line-height: 1.2;
     font-weight: bold;
 }
+
+
+/*---video section----*/
+
+.videos{
+    background-color: #00175F;
+    width:100%;
+    margin-top: 30px;
+    padding:20px 20px;
+
+    h2{
+        color:white;
+        font-size: 3rem;
+        font-weight: 700;
+        padding:20px 10px;
+    }
+
+
+    nav{
+        display:flex;
+        gap:17px;
+        justify-content: flex-start;
+        align-items: center;
+        padding:10px;
+
+        a{
+            color:white;
+            text-decoration: none;
+            cursor: pointer;
+
+        }
+
+    }
+
+    .hr{
+        margin:0;
+    }
+}
+
+
+
+.videos-part {
+    display: flex;
+    gap: 20px; 
+    padding: 20px 10px;
+    overflow-x: auto; 
+    width: 100vw;
+    scroll-behavior: smooth;
+    
+}
+    
+    
+.video {
+    position: relative;
+    width: 27vw; /* Fixed width for the cards */
+    flex:0 0 27vw;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a card effect */
+    background-color: white;
+}
+    
+    /* Images inside the container */
+.video img {
+    width: 100%;
+    height: 500px;
+    border-radius:20px;
+}
+
+
+.video i{
+    position:absolute;
+    top:20px;
+    left:5px;
+    font-size: 3rem;
+    color:white;
+
+}
+    
+    /* Text overlay on the image */
+.v-para {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    background: linear-gradient(to top,rgba(0,0,0,0.8),transparent);
+}
+    
+    /* Styling for the text */
+.v-para span {
+    font-size: 14px;
+}
+    
+.v-para h2 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.container{
+    position:relative;
+    background-color: #00175F;
+   
+}
+
+.margin{
+    width: 100%;
+    cursor: pointer;
+    margin-top:60px;
+}
+
+.button{
+    position:relative;
+    left:50%;
+   justify-self: center;
+   margin-top: -50px;
+    
+}
+
+/*---live-section---*/
+.live{
+    h2{
+        font-size: 3rem;
+        font-weight: 700;
+        padding:20px 10px;
+        color:#00175F;
+        text-transform: uppercase;
+    }
+}
+
