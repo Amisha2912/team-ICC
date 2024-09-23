@@ -18,6 +18,7 @@ body{
     justify-content: space-around; 
     height:30vh;
     width:100vw;
+    overflow-x: scroll;
 }
 .box{
     background-color: white;
@@ -444,7 +445,7 @@ hr {
 /*---live-section---*/
 .live{
     h2{
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
         padding:20px 10px;
         color:#00175F;
@@ -463,6 +464,68 @@ hr {
         font-size:1.5rem;
     }
 }
+
+/*---ICC-TV,family-section-----*/
+.icctv,.family{
+    display:flex;
+    background-color: #00175F;
+    height:70vh;
+}
+
+
+
+
+.tv-content{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left:20px;
+
+    img{
+        height:150px;
+    }
+
+    .icc-tv{
+        height: 45px;
+        width: 250px;
+        font-size: 10px;
+        font-weight: 700;
+        color: #00175F;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .para-tv{
+        color:white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.family {
+    .tv-content{
+        img{
+            height:60px;
+        }
+    }
+}
+
+.image-tv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-tv img{
+    height: 56vh;
+    width:55vw;
+    
+
+}
+
+
 
 
 /*----footer-section-----*/
