@@ -6,10 +6,8 @@
 }
 
 body {
-     color: #00175F;
-     font-family: "Poppins", sans-serif;
-     /* font-weight: 100;
-     font-style: normal */
+    color: #00175F;
+    font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -44,16 +42,20 @@ body {
 /* <!-- Jump To --> */
 
 .container {
+    border: 12px solid firebrick;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    
+    width: 100vw;
+    height: auto;
+
 }
 
 
 
 .sidebar {
+    border: 2px solid red;
     font-weight: 800;
     background-color: #fff;
     padding: 30px;
@@ -61,6 +63,8 @@ body {
     width: 350px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    width: 20%;
 }
 
 .sidebar h2 {
@@ -76,7 +80,7 @@ body {
 
 .sidebar li {
     margin-bottom: 10px;
-    
+
 }
 
 .sidebar li a {
@@ -96,16 +100,19 @@ body {
 
 
 .content {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     /* width: calc(100% - 300px); */
     width: 70%;
-   
+
 }
- 
-    
+
+
 
 
 .content h1 {
@@ -118,6 +125,7 @@ body {
 .content .ranking-table {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .ranking-table .ranking-category {
@@ -126,6 +134,7 @@ body {
     border-radius: 5px;
     width: calc(100% / 3 - 20px);
     margin-bottom: 20px;
+   
 }
 
 .ranking-category h2 {
@@ -142,6 +151,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    
 }
 
 .ranking-category li .flag {
@@ -166,4 +176,22 @@ body {
 
 .ranking-category .full-rankings:hover {
     background-color: #e0e0e0;
+}
+
+    /* next */
+
+.content-1{
+    
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ /* width: calc(100% - 300px); */
+ width: 70%;
+}
+
+.ranking-table-1{
+    display: flex;
+    justify-content: space-between;
+
 }
