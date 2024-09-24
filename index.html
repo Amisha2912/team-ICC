@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #00175F;
+            position: relative; /* Ensure that the body acts as a positioning context */
+        }
+
+        h1 {
+            margin-top: 20px; 
+            margin-bottom: 20px;
+            position: absolute; /* Position the heading at the top */
+            top: 20px; 
+            width: 100%; 
+            text-align: center; 
+            color: white;
+            z-index: 100; /* Ensure it is above other content */
+        }
+
+        .image-container {
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center horizontally */
+            z-index: 10; /* Place it below the buttons */
+        }
+
+        img {
+            opacity: 0.5;
+        }
+
+        .button-container {
+            position: relative; /* Ensure the buttons are positioned relative to the container */
+            z-index: 20; /* Ensure the buttons are above the image */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 20px 30px;
+            margin: 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: block;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>ICC-Official International Cricket Council Website</h1>
+    <div class="image-container">
+    <img src="/Amisha(Main-page)/images/footer-logo.png" alt="">
+    </div>
+    <div class="button-container">
+    <button><a href="/Amisha(Main-page)/index.html">Home Page</a></button>
+    <button><a href="/Amisha(Matches)/index.html">Matches</a></button>
+    <button><a href="/Deepak(Rankings)/index.html">Ranking</a></button>
+    <button><a href="/Deepak(News)/index.html">News</a></button>
+    <button><a href="/Pawan(video)/index.html">Videos</a></button>
+    <button><a href="/Atif(Teams)/index.html">Teams</a></button>
+    <button><a href="/Pawan(Awards)/index.html">Awards</a></button>
+    <button><a href="/Atif(Travel)/index.html">Travel</a></button>
+    <button><a href="/Atif(Shop)/index.html">Shop</a></button>
+    </div>
+</body>
+</html>

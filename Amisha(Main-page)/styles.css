@@ -6,7 +6,7 @@
 body{
     width:100vw;
     height:100%;
-    /* overflow-x: hidden;  */
+    overflow-x: hidden; 
 }
 
 
@@ -25,7 +25,7 @@ body{
     /* border: 3px solid black; */
     border-radius: 10px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    padding: 10px;
+    padding: 2px;
     width: 23vw;
     flex: 0 0 23vw;
     /* flex: 1 1 calc(33.333% - 40px); Responsive grid */
@@ -44,6 +44,10 @@ body{
     flex-grow: 1;
     font-size: 14px;
     color: #333;
+    
+    b{
+        color:black;
+    }
 }
 
 .status {
@@ -62,10 +66,15 @@ body{
 }
 
 .status span {
-    padding: 5px 10px;
+    padding: 0 10px;
     font-size: 12px;
     font-weight: bold;
 
+}
+
+.bar{
+    padding:0 4px;
+    border:1px solid rgba(255,255,255,0.5);
 }
 
 .body {
@@ -130,6 +139,30 @@ hr {
     margin: 15px 0;
 }
 
+/* -----scroll-property---- */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+}
+
+.top-section:hover::-webkit-scrollbar-thumb {
+    background: #717171;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
 
 
 /*-----------hero-section--------*/
@@ -145,14 +178,15 @@ hr {
     background-repeat: no-repeat;
     width:97%;
     border-radius:20px;
-    margin:20px;
+    margin:0 20px;
     height:75vh;
-    position:absolute;
+    position:relative; /* earlier was absolute*/
 
 }
 
 
 /*----nav-bar-----*/
+
 .sticky{
     position:sticky;
     top:0;
@@ -169,7 +203,6 @@ hr {
     font-weight: 400;
     background-color: #00175F;
 
-    
     a img{
         margin-top: 4px;
         height:40px;
@@ -222,6 +255,7 @@ hr {
 }
 
 
+/* -----content---- */
 .content{
     position: absolute;
     display: flex;
@@ -251,21 +285,22 @@ hr {
 .images {
     display: flex;
     gap: 20px; 
-    padding: 0 20px;
+    padding-left: 20px;
     overflow-x: auto; 
-    width: 100vw;
+    width: 99vw;
     scroll-behavior: smooth;
     position: absolute; /* this is absolute within the hero-section */
-    bottom: 0;
+    bottom: 2px;
+    padding-bottom: 20px;
 }
 
 
 .img {
     position: relative;
-    width: 23vw; /* Fixed width for the cards */
+    max-width: 23vw; /* Fixed width for the cards */
     flex:0 0 23vw;
     border-radius: 20px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a card effect */
+    box-shadow: 0px 8px 15px #00175F; /* Add shadow for a card effect */
     background-color: white;
 }
 
@@ -287,6 +322,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 20px;
     background: linear-gradient(to top,rgba(0,0,0,0.8),transparent);
 }
 
@@ -351,11 +387,18 @@ hr {
             cursor: pointer;
 
         }
+        .underline{
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 3px;
+            color:white;
+        }
 
     }
 
     .hr{
         margin:0;
+        margin-left:10px;
     }
 }
 
@@ -364,9 +407,10 @@ hr {
 .videos-part {
     display: flex;
     gap: 20px; 
-    padding: 20px 10px;
+    padding: 20px 0;
+    padding-right: 20px;
     overflow-x: auto; 
-    width: 100vw;
+    width: 97vw;
     scroll-behavior: smooth;
     /* z-index:300; */
     
