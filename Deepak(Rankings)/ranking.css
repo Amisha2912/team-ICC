@@ -1,11 +1,13 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
+    width: 100vw;
     color: #00175F;
     font-family: "Poppins", sans-serif;
 }
@@ -38,33 +40,26 @@ body {
     cursor: pointer;
 }
 
-
 /* <!-- Jump To --> */
 
 .container {
-    border: 12px solid firebrick;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px;
+    padding: 0;
     width: 100vw;
     height: auto;
-
 }
 
-
-
 .sidebar {
-    border: 2px solid red;
     font-weight: 800;
     background-color: #fff;
-    padding: 30px;
-    margin-right: 20px;
-    width: 350px;
+    padding: 10px;
+    margin-right: 10px;
+    width: 25%;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 100vh;
-    width: 20%;
 }
 
 .sidebar h2 {
@@ -74,13 +69,12 @@ body {
 
 .sidebar ul {
     list-style: none;
-    padding: 0;
     color: #00175F;
 }
 
 .sidebar li {
     margin-bottom: 10px;
-
+    margin-top: 30px;
 }
 
 .sidebar li a {
@@ -89,7 +83,6 @@ body {
     display: block;
     padding: 10px;
     border-radius: 5px;
-    background-color: #f0f0f0;
 }
 
 .sidebar li a:hover {
@@ -98,22 +91,27 @@ body {
 
 /* Men's Team Rankings */
 
+.content-box {
+    width: 80%;
+}
 
 .content {
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* width: calc(100% - 300px); */
-    width: 70%;
-
+    margin: auto;
 }
 
-
-
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(126, 155, 179);
+    margin: 10px;
+}
 
 .content h1 {
     color: #00175F;
@@ -125,16 +123,14 @@ body {
 .content .ranking-table {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .ranking-table .ranking-category {
-    background-color: #e0e0e0;
+    background-color: #f8f3f3;
     padding: 10px;
     border-radius: 5px;
     width: calc(100% / 3 - 20px);
     margin-bottom: 20px;
-   
 }
 
 .ranking-category h2 {
@@ -143,25 +139,26 @@ body {
 
 .ranking-category ul {
     list-style: none;
-    padding: 0;
+    line-height: 50px;
 }
 
 .ranking-category li {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: first baseline;
     align-items: center;
     margin-bottom: 10px;
-    
 }
 
 .ranking-category li .flag {
     width: 30px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .ranking-category li .ranking {
     font-weight: bold;
+    margin-left: auto;
 }
 
 .ranking-category .full-rankings {
@@ -178,20 +175,36 @@ body {
     background-color: #e0e0e0;
 }
 
-    /* next */
-
-.content-1{
-    
- background-color: #fff;
- padding: 20px;
- border-radius: 5px;
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- /* width: calc(100% - 300px); */
- width: 70%;
+.full-rankings {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
 
-.ranking-table-1{
-    display: flex;
-    justify-content: space-between;
-
+.full-rankings span {
+    margin-left: 20px;
+    background-color: transparent;
 }
+
+
+.logo1{
+    margin-top: 30px;
+}
+.logo1 img {
+
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+  .firstli {
+    line-height:50px;
+  }
+  
+  .spanimg img {
+    width: 80px;
+    margin-left: 100px;
+    margin-top: 30px; /* Adjust this value as needed */
+    display: block; /* Ensures the image behaves like a block element */
+  }
+  
