@@ -10,11 +10,12 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            gap:20px;
+            height: 125vh;
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #00175F;
-            position: relative; /* Ensure that the body acts as a positioning context */
+            /* position: relative; Ensure that the body acts as a positioning context */
         }
 
         h1 {
@@ -41,8 +42,8 @@
         }
 
         .button-container {
-            position: relative; /* Ensure the buttons are positioned relative to the container */
-            z-index: 20; /* Ensure the buttons are above the image */
+            position: relative; /* Ensured the buttons are positioned relative to the container */
+            z-index: 20; /* the buttons are above the image--IMP--- */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -68,6 +69,12 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        span{
+            color:white;
+            font-size: 20px;
+            padding-top:10px;
+        }
     </style>
 </head>
 <body>
@@ -76,13 +83,17 @@
     <img src="/Amisha(Main-page)/images/footer-logo.png" alt="">
     </div>
     <div class="button-container">
+        <span>Done by Amisha</span>
     <button><a href="/Amisha(Main-page)/index.html">Home Page</a></button>
     <button><a href="/Amisha(Matches)/index.html">Matches</a></button>
+    <span>Done by Deepak</span>
     <button><a href="/Deepak(Rankings)/index.html">Ranking</a></button>
     <button><a href="/Deepak(News)/index.html">News</a></button>
+    <span>Done by Pawan</span>
     <button><a href="/Pawan(video)/index.html">Videos</a></button>
-    <button><a href="/Atif(Teams)/index.html">Teams</a></button>
     <button><a href="/Pawan(Awards)/index.html">Awards</a></button>
+    <span>Done by Atif</span>
+    <button><a href="/Atif(Teams)/index.html">Teams</a></button>
     <button><a href="/Atif(Travel)/index.html">Travel</a></button>
     <button><a href="/Atif(Shop)/index.html">Shop</a></button>
     </div>

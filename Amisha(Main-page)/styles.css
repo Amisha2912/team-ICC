@@ -490,6 +490,104 @@ hr {
     
 }
 
+
+
+/* -----ranking------*/
+.men{
+    font-size: 35px;
+    font-weight: 800;
+    color:#00175F;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.women{
+    font-size: 35px;
+    font-weight: 800;
+    color:#00175F;
+    text-transform: uppercase;
+    padding:50px 20px 20px 20px;
+}
+.men-rank{
+    display:flex;
+    justify-content: space-around;
+}
+
+.women-rank{
+    display: flex;
+    justify-content: flex-start;
+    gap:40px;
+    padding-left: 20px;
+}
+
+.table{
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    min-width:440px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.t-heading{
+    text-transform: uppercase;
+    text-align: left;
+    padding:0 10px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.t-row{
+    display:flex;
+    /* padding:20px; */
+}
+
+.t-bold{
+    padding:15px 0;
+}
+
+.r{
+    gap: 11px;
+    display: flex;
+    padding-left:8px;
+    align-items: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(126, 155, 179);
+    margin: 10px;
+}
+
+.score{
+    padding-right:8px;
+}
+
+
+.t-flag{
+    flex:1;
+    border-left: 1px solid grey;
+    padding-left: 10px;
+}
+.t-button{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.green{
+    border:2px solid lightgreen;
+}
+
+.blue{
+    border:2px solid lightskyblue;
+}
+
+.pink{
+    border:2px solid #FA08EA;
+}
 /*---live-section---*/
 .live{
     h2{
