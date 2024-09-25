@@ -6,7 +6,7 @@
 body{
     width:100vw;
     height:100%;
-    /* overflow-x: hidden;  */
+    overflow-x: hidden; 
 }
 
 
@@ -25,7 +25,7 @@ body{
     /* border: 3px solid black; */
     border-radius: 10px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    padding: 10px;
+    padding: 2px;
     width: 23vw;
     flex: 0 0 23vw;
     /* flex: 1 1 calc(33.333% - 40px); Responsive grid */
@@ -44,6 +44,10 @@ body{
     flex-grow: 1;
     font-size: 14px;
     color: #333;
+    
+    b{
+        color:black;
+    }
 }
 
 .status {
@@ -62,10 +66,15 @@ body{
 }
 
 .status span {
-    padding: 5px 10px;
+    padding: 0 10px;
     font-size: 12px;
     font-weight: bold;
 
+}
+
+.bar{
+    padding:0 4px;
+    border:1px solid rgba(255,255,255,0.5);
 }
 
 .body {
@@ -130,6 +139,30 @@ hr {
     margin: 15px 0;
 }
 
+/* -----scroll-property---- */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+}
+
+.top-section:hover::-webkit-scrollbar-thumb {
+    background: #717171;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
 
 
 /*-----------hero-section--------*/
@@ -145,14 +178,15 @@ hr {
     background-repeat: no-repeat;
     width:97%;
     border-radius:20px;
-    margin:20px;
+    margin:0 20px;
     height:75vh;
-    position:absolute;
+    position:relative; /* earlier was absolute*/
 
 }
 
 
 /*----nav-bar-----*/
+
 .sticky{
     position:sticky;
     top:0;
@@ -169,7 +203,6 @@ hr {
     font-weight: 400;
     background-color: #00175F;
 
-    
     a img{
         margin-top: 4px;
         height:40px;
@@ -222,6 +255,7 @@ hr {
 }
 
 
+/* -----content---- */
 .content{
     position: absolute;
     display: flex;
@@ -251,21 +285,22 @@ hr {
 .images {
     display: flex;
     gap: 20px; 
-    padding: 0 20px;
+    padding-left: 20px;
     overflow-x: auto; 
-    width: 100vw;
+    width: 99vw;
     scroll-behavior: smooth;
     position: absolute; /* this is absolute within the hero-section */
-    bottom: 0;
+    bottom: 2px;
+    padding-bottom: 20px;
 }
 
 
 .img {
     position: relative;
-    width: 23vw; /* Fixed width for the cards */
+    max-width: 23vw; /* Fixed width for the cards */
     flex:0 0 23vw;
     border-radius: 20px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a card effect */
+    box-shadow: 0px 8px 15px #00175F; /* Add shadow for a card effect */
     background-color: white;
 }
 
@@ -287,6 +322,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 20px;
     background: linear-gradient(to top,rgba(0,0,0,0.8),transparent);
 }
 
@@ -351,11 +387,18 @@ hr {
             cursor: pointer;
 
         }
+        .underline{
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 3px;
+            color:white;
+        }
 
     }
 
     .hr{
         margin:0;
+        margin-left:10px;
     }
 }
 
@@ -364,9 +407,10 @@ hr {
 .videos-part {
     display: flex;
     gap: 20px; 
-    padding: 20px 10px;
+    padding: 20px 0;
+    padding-right: 20px;
     overflow-x: auto; 
-    width: 100vw;
+    width: 97vw;
     scroll-behavior: smooth;
     /* z-index:300; */
     
@@ -446,6 +490,104 @@ hr {
     
 }
 
+
+
+/* -----ranking------*/
+.men{
+    font-size: 35px;
+    font-weight: 800;
+    color:#00175F;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.women{
+    font-size: 35px;
+    font-weight: 800;
+    color:#00175F;
+    text-transform: uppercase;
+    padding:50px 20px 20px 20px;
+}
+.men-rank{
+    display:flex;
+    justify-content: space-around;
+}
+
+.women-rank{
+    display: flex;
+    justify-content: flex-start;
+    gap:40px;
+    padding-left: 20px;
+}
+
+.table{
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    min-width:440px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.t-heading{
+    text-transform: uppercase;
+    text-align: left;
+    padding:0 10px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.t-row{
+    display:flex;
+    /* padding:20px; */
+}
+
+.t-bold{
+    padding:15px 0;
+}
+
+.r{
+    gap: 11px;
+    display: flex;
+    padding-left:8px;
+    align-items: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(126, 155, 179);
+    margin: 10px;
+}
+
+.score{
+    padding-right:8px;
+}
+
+
+.t-flag{
+    flex:1;
+    border-left: 1px solid grey;
+    padding-left: 10px;
+}
+.t-button{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.green{
+    border:2px solid lightgreen;
+}
+
+.blue{
+    border:2px solid lightskyblue;
+}
+
+.pink{
+    border:2px solid #FA08EA;
+}
 /*---live-section---*/
 .live{
     h2{
@@ -530,7 +672,173 @@ hr {
 }
 
 
+/*----news-----*/
 
+.news{
+    background: linear-gradient(to top, #00175F 50%, transparent 50%);
+    margin-bottom: 40px;
+    position:relative;
+    h1{
+        font-size: 38px;
+        font-weight: 800;
+        color:#00175F;
+        text-transform: uppercase;
+        padding:40px 0 0 20px;
+    }
+}
+
+#ball{
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+
+.cric-news{
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-phots{
+    position:relative;
+    border-radius: 10px;
+    
+}
+
+.album-content{
+    position:absolute;
+    bottom: 5px;
+    color:white;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.9),transparent);
+}
+
+
+.album{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: "one one two"
+                         "one one three"
+                         "four five five"
+                         "six five five";
+    gap:20px;
+    padding:20px;
+
+        img{
+            height:300px;
+            border-radius: 10px;
+        }
+}
+
+#large{
+    height: 630px;
+}
+
+.box-1{
+    grid-area:one;
+}
+
+.box-2{
+    grid-area:two;
+}
+
+.box-3{
+    grid-area:three;
+}
+
+.box-4{
+    grid-area:four;
+}
+
+.box-5{
+    grid-area:five;
+}
+
+.box-6{
+    grid-area:six;
+}
+
+.headlines{
+    font-size: 16px;
+    font-weight: 800;
+    width: 25vw;
+    padding-right:60px;
+    color:black;
+}
+
+.popular-news{
+    width: 25vw;
+    hr{
+        width:20vw;
+    }
+
+    .pt{
+        padding-bottom: 20px;
+    }
+}
+
+.pop{
+    color:#00175F;
+}
+.popular-news ol {
+    counter-reset: item; /* Resets the counter ---new thing---- */
+}
+
+.popular-news li {
+    list-style: none; /* Removes the default list style */
+    counter-increment: item; /* Increments the counter */
+    position: relative;
+    padding-left: 25px; 
+    margin-bottom: 20px;
+}
+
+.popular-news li::before {
+    content: counter(item); /* Adds the number before the item */
+    position: absolute;
+    left: 0;
+    top: 50%; /* Centers vertically */
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Adjust to your needs */
+}
+
+.pt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust the gap between span and p */
+}
+
+.headlines {
+    margin: 0; /* Removes default margin */
+}
+
+
+.half{
+    padding-bottom: 50px;
+    hr{
+        width:70%;
+        
+    }
+
+    .button{
+        margin-right: 80px;
+
+    }
+}
+
+/*----awards-section----*/
+.awards{
+    background-color: #00175F;
+    position: relative;
+    height:125vh;
+}
+
+.a-img{
+    position:absolute;
+    top:0;
+}
 
 /*----footer-section-----*/
 
