@@ -334,6 +334,263 @@ hr {
     
 
 }
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: #f4f4f9;
+}
+
+/* Navigation Bar */
+.container {
+    width: 100%;
+}
+
+nav {
+    background-color: #00175f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.nav-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 220px;
+}
+.heading h1 {
+    font-size: 2.5rem;
+}
+
+.lowerpart {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    padding:0  200px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 10px 0;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+ul li:hover {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #010102;
+    color: white;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-cards {
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 90%;
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    /* width: 22%; */
+    height: 60vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-10px);
+}
+
+.hero-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+.topbtn {
+    background-color: #a09389;
+    padding: 10px 2px;
+    /* Updated padding */
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.downbtn {
+    padding: 10px 60px;
+    border-radius: 25px;
+    background-color: #ac9862;
+    color: #00175f;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+}
+
+.topbtn:hover,
+.downbtn:hover {
+    background-color: #00175f;
+    color: #ffcc00;
+}
+
+.news-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.category {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.news-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: 12px;
+    color: #999;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+/* videosection */
+.videosection {
+    background-color: #00175f;
+    padding: 5%;
+}
+
+.video-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes space evenly */
+    gap: 10px;
+}
+
+.video-box {
+    width: 23%;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.3s ease; /* Adds a hover effect */
+}
+
+.video-box:hover {
+    transform: scale(1.05); /* Slightly zooms in on hover */
+}
+
+/* Assign different background images to each box */
+.box1 {
+    background-image: url("videoimage/1.png");
+}
+
+.box2 {
+    background-image: url("videoimage/2.png");
+}
+
+.box3 {
+    background-image: url("videoimage/3.png");
+}
+
+.box4 {
+    background-image: url("videoimage/4.png");
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1024px) {
+    .video-box {
+        width: 48%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-box {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-box {
+        width: 100%;
+        height: 250px;
+    }
+}
+
 
 
 /*----footer-section-----*/
