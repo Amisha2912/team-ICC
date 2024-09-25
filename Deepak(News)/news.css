@@ -518,11 +518,12 @@ display: flex;
     height: 70vh;
     border: solid green;
     background-image: url(https://images.icc-cricket.com/image/upload/t_ratio21_9-size60/v1714892610/prd/wc9jwxl5dvv7xafbqwgg);
+    z-index: 0;
 }
 .content-page{
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    z-index: 1;
 }
 .content-page h1{
     color: white;
@@ -540,12 +541,12 @@ display: flex;
     }
 
     .six-time{
-        border: solid red;
+       
         background-color: white;
         max-width: 480px;
        
         margin: 0;
-        z-index: 1;
+        
     }
     .six-time h1{
         font-size: 38px;
