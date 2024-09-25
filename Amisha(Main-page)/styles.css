@@ -672,7 +672,173 @@ hr {
 }
 
 
+/*----news-----*/
 
+.news{
+    background: linear-gradient(to top, #00175F 50%, transparent 50%);
+    margin-bottom: 40px;
+    position:relative;
+    h1{
+        font-size: 38px;
+        font-weight: 800;
+        color:#00175F;
+        text-transform: uppercase;
+        padding:40px 0 0 20px;
+    }
+}
+
+#ball{
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+
+.cric-news{
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-phots{
+    position:relative;
+    border-radius: 10px;
+    
+}
+
+.album-content{
+    position:absolute;
+    bottom: 5px;
+    color:white;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.9),transparent);
+}
+
+
+.album{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: "one one two"
+                         "one one three"
+                         "four five five"
+                         "six five five";
+    gap:20px;
+    padding:20px;
+
+        img{
+            height:300px;
+            border-radius: 10px;
+        }
+}
+
+#large{
+    height: 630px;
+}
+
+.box-1{
+    grid-area:one;
+}
+
+.box-2{
+    grid-area:two;
+}
+
+.box-3{
+    grid-area:three;
+}
+
+.box-4{
+    grid-area:four;
+}
+
+.box-5{
+    grid-area:five;
+}
+
+.box-6{
+    grid-area:six;
+}
+
+.headlines{
+    font-size: 16px;
+    font-weight: 800;
+    width: 25vw;
+    padding-right:60px;
+    color:black;
+}
+
+.popular-news{
+    width: 25vw;
+    hr{
+        width:20vw;
+    }
+
+    .pt{
+        padding-bottom: 20px;
+    }
+}
+
+.pop{
+    color:#00175F;
+}
+.popular-news ol {
+    counter-reset: item; /* Resets the counter ---new thing---- */
+}
+
+.popular-news li {
+    list-style: none; /* Removes the default list style */
+    counter-increment: item; /* Increments the counter */
+    position: relative;
+    padding-left: 25px; 
+    margin-bottom: 20px;
+}
+
+.popular-news li::before {
+    content: counter(item); /* Adds the number before the item */
+    position: absolute;
+    left: 0;
+    top: 50%; /* Centers vertically */
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Adjust to your needs */
+}
+
+.pt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust the gap between span and p */
+}
+
+.headlines {
+    margin: 0; /* Removes default margin */
+}
+
+
+.half{
+    padding-bottom: 50px;
+    hr{
+        width:70%;
+        
+    }
+
+    .button{
+        margin-right: 80px;
+
+    }
+}
+
+/*----awards-section----*/
+.awards{
+    background-color: #00175F;
+    position: relative;
+    height:125vh;
+}
+
+.a-img{
+    position:absolute;
+    top:0;
+}
 
 /*----footer-section-----*/
 
