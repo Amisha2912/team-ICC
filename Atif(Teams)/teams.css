@@ -12,7 +12,7 @@
     gap: 20px;
     justify-content: space-around; 
     height:30vh;
-    width:100vw;
+    /* width:100vw; */
     overflow-x: scroll;
 }
 .box{
@@ -182,7 +182,7 @@ hr {
 }
 .search{
     display:flex;
-    padding-left:34vw;
+    /* padding-left:34vw; */
     gap:20px;
     font-size:10px;
     font-weight: 700;
@@ -263,10 +263,10 @@ hr {
 
 .ICC-logo{
     position: absolute;
-    bottom: 0;
-    left: 120px;
-    height: 50px;
-    transform: scale(7);
+    bottom: -48px;
+    left: 10px;
+    height: 200px;
+   
 }
 
 .into-content{
