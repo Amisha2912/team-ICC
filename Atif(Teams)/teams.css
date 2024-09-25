@@ -3,12 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    width:100%;
-    height:100%;
-    overflow-x: hidden; 
-}
 
+/* ----amisha's work----- */
 /*-----header section------*/
 .top-section{
     display: flex;
@@ -16,7 +12,7 @@ body{
     gap: 20px;
     justify-content: space-around; 
     height:30vh;
-    width:100vw;
+    /* width:100vw; */
     overflow-x: scroll;
 }
 .box{
@@ -49,22 +45,15 @@ body{
     display: flex;
     flex-direction:column;
     gap: 6px;
-}
-
-.test{
-    color:green;
-    font-size:12px;
-    font-weight: 800;
-}
-.t20{
-    color:purple;
-    font-size:12px;
-    font-weight: 800;
-}
-.odi{
-    color:skyblue;
-    font-size:12px;
-    font-weight: 800;
+    .test{
+        color:green;
+    }
+    .t20{
+        color:purple
+    }
+    .odi{
+        color:skyblue;
+    }
 }
 
 .status span {
@@ -138,29 +127,8 @@ hr {
 
 
 
-/* -----scroll-property---- */
+/*-----------hero-section--------*/
 
-::-webkit-scrollbar {
-    width: 5px;
-    height: 3px;
-}
-
-::-webkit-scrollbar-track {
-    background: none;
-}
-
-::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 2px;
-}
-
-.top-section:hover::-webkit-scrollbar-thumb {
-    background: #717171;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #888;
-}
 
 
 /*----nav-bar-----*/
@@ -186,13 +154,6 @@ hr {
         height:40px;
         width:80px;
     }
-}
-
-.underline{
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 3px;
-    color:white;
 }
 
 .logo{
@@ -221,7 +182,7 @@ hr {
 }
 .search{
     display:flex;
-    padding-left:34vw;
+    /* padding-left:34vw; */
     gap:20px;
     font-size:10px;
     font-weight: 700;
@@ -240,126 +201,108 @@ hr {
 }
 
 
-.top-heading{
-    width:100%;
-    height:15vh;
-    background-color: #00175F;
-
-    h1{
-        font-size: 2.5rem;
-        color:white;
-        text-transform: uppercase;
-        padding-top: 2rem;
-        padding-left:1rem;
-    }
-}
 
 
-
-/* -----menu-matches----- */
-.menu-matches{
-    
-    ul{
-        display: flex;
-        gap:45px;
-        margin-top: 5vh;
-        margin-left: 20px;
-
-        li{
-            list-style-type: none;
-            color: black;
-            font-size: 12px;
-            font-weight: 800;
-        }
-    }
-
-    ul li a{
-        text-decoration: none;
-    }
-}
-
-
-/* ----matches----- */
-
-.matches{
-    padding:0 10px;
-    display:flex;
-    flex-direction: column;
-    width:100%;
-}
-
-.date-yy{
-    background-color: #00175F;
-    color:white;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 800;
-    padding:10px 20px;
-}
-
-.match-time{
+/* ----my-work---- */
+.teams-category-container{
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+    gap: 40px;
+    background-color: #f9f9f9; /* bg-light-background */
+    margin-right: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06); /* shadow-module */
+   
 }
 
-.rows{
-    display:flex;
-    justify-content: space-around;
-    border:1px solid grey;
-    border-radius: 7px;
-    padding:30px 10px;
-    margin:20px 0;
+.tc-d1 h2{
+    font-size: 38px;
+    font-weight: bold;
+    color: #1d4070;
 }
 
-.match-head {
-    flex: 0.5;  /*this is important*/
-    border-right:1px solid grey;
+.tc-d2{
+    padding-bottom: 10px;
 }
+.tc-d2 a{
 
-.main{
-    font-size: 14px;
-    font-weight: 800;
-    color:#333;
-    width:20vw;
-}
-.venue{
-    font-size: 12px;
-    font-weight: 400;
-    color:grey;
-}
-
-.ctry{
-    display: flex;
-    flex: 0.5;
-    border-right:1px solid grey;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-}
-
-.a{
-    font-size:25px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.b{
-    font-weight: 900;
-}
-
-.match-cen{
-    padding:0 3rem;
-    justify-self: center;
-}
-
-.match-cen button {
-    padding: 20 15px;
-    text-align: center;
-    cursor: pointer;
+    font-family: 'YourCustomFont', sans-serif;
     font-size: 10px;
-    font-weight: 700;
+    font-weight: bold;
+    margin-inline-end: 25px;
+    text-decoration: none;
+    color: #6b7280;
 }
 
+.tc-d2 :first-child{ 
+    color: #1f2937;
+    border-bottom: 3px solid #1f2937;
+     padding-bottom: 4px;
+  
+}
+
+.teams-container{
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+}
+
+.content{
+    border-radius: 15px;
+    background-color: #00165f;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.ICC-logo{
+    position: absolute;
+    bottom: -48px;
+    left: 10px;
+    height: 200px;
+   
+}
+
+.into-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    img{
+        width: 100px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+}
+
+.team-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.team-profile button{
+    border: none;
+    width: 200px;
+    font-weight: bold;
+    border-radius: 9999px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #007BFF;
+}
 
 
 /*----footer-section-----*/
@@ -464,5 +407,3 @@ hr {
         padding-bottom:40px;
     }
 }
-
-
