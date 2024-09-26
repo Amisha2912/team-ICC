@@ -317,13 +317,18 @@ hr {
     align-items: center;
     justify-content: center;
     gap: 20px;
-
+    
+    .image{
+        background: white;
+    border-radius: 50%;
+    padding: 15px
+    }
     img{
         width: 70px;
         height: 70px;
-        background-color: white;
-        border-radius: 50%;
-        padding: 10px;
+      
+        /* border-radius: 50%; */
+        /* padding: 10px; */
     }
 
 }
