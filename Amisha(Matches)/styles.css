@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
 body{
@@ -475,6 +476,188 @@ hr {
     p{
         padding-bottom:40px;
     }
+}
+
+
+
+/*--------responsive---------*/
+
+@media screen and (max-width:1250px){
+
+    /*---header-section---*/
+    .top-section{
+        max-height:50vh;
+    }
+
+    /*--nav-bar----*/
+    .search{
+        padding-left: 0;
+    }
+}
+
+
+@media(max-width:890px){
+
+    /*---hero-section---*/
+    .hero-section{
+        height: 114vh;
+    }
+
+
+    /*--navbar---*/
+    .menu-bar{
+        width:60vw;
+    }
+
+
+    /*---matches-section-----*/
+    .matches{
+        width:100%;
+
+        .rows{
+            flex-direction: column;
+            text-align: center;
+            .match-head{
+                border-right: 0;
+                border-bottom: 2px solid #BEBEBE;
+            }
+
+            .match-head p{
+                width:90vw;
+            }
+
+            .main{
+                width:90vw;
+                justify-content: center;
+            }
+
+            .ctry{
+                padding:0;
+                border-right: 0;
+                border-bottom: 2px solid #BEBEBE;
+
+                .a{
+                    width:80vw;
+                }
+            }
+
+            
+        }
+    }
+
+}
+
+@media(max-width:786px){
+
+
+    /*----header-section---*/
+    .top-section{
+        .box{
+            max-width: 70vw;
+            flex:0 0 70vw;
+
+            .date p{
+                width: fit-content;
+            }
+        }
+    }
+
+    /*---navbar----*/
+    .sticky {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .logo {
+        gap: 10px; /* Reduce gap between logo and bars */
+    }
+
+    .menu-bar ul {
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px; 
+        margin: 0; 
+        width: 100%; /* Ensure the menu bar takes full width */
+    }
+
+    .search {
+        font-size: 12px; 
+        gap: 15px; 
+    }
+
+    .search {
+        order: 1; 
+        padding-left: 0; 
+        justify-content: flex-start;
+    }
+
+    .del{
+        display:none;
+    }
+
+}
+
+
+@media(max-width:450px){
+
+
+    /*----header-section---*/
+    .top-section{
+        .box{
+            max-width: 88vw;
+            flex:0 0 88vw;
+
+            .date p{
+                width: fit-content;
+            }
+        }
+    }
+
+
+    /*----footer----*/
+    .values {
+        font-size: 10px;
+    }
+
+    .footer-hr {
+        width: 30%;
+    }
+
+    .p-logos img {
+        width: 100px;
+        height: 30px;
+    }
+
+    .p-logos-sm img {
+        width: 80px;
+        height: 24px;
+    }
+
+    .all-supports {
+        gap: 20px;
+    }
+
+    .social-media {
+        font-size: 0.8rem;
+    }
+
+    .social-icons i {
+        padding: 8px;
+    }
+
+    .terms {
+        font-size: 8px;
+        gap: 15px;
+    }
+
+    .copyright img {
+        width: 40px;
+        height: 16px;
+    }
+
+    .copyright p {
+        padding-bottom: 20px;
+    }
+
 }
 
 
