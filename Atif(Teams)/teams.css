@@ -4,26 +4,26 @@
     box-sizing: border-box;
 }
 
+
 /* ----amisha's work----- */
-/*-----header section------*/
+
+/* --updated header section--- */
 .top-section{
     display: flex;
     /* flex-wrap: wrap; */
-    gap: 20px;
+    gap: 18px;
     justify-content: space-around; 
     height:30vh;
-    /* width:100vw; */
+    width:100vw;
     overflow-x: scroll;
+    overflow-y:hidden;
 }
 .box{
     background-color: white;
-    /* border: 3px solid black; */
     border-radius: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    padding: 10px;
+    padding: 2px;
     width: 23vw;
     flex: 0 0 23vw;
-    /* flex: 1 1 calc(33.333% - 40px); Responsive grid */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,6 +39,10 @@
     flex-grow: 1;
     font-size: 14px;
     color: #333;
+    
+    b{
+        color:black;
+    }
 }
 
 .status {
@@ -57,10 +61,15 @@
 }
 
 .status span {
-    padding: 5px 10px;
+    padding: 0 10px;
     font-size: 12px;
     font-weight: bold;
 
+}
+
+.bar{
+    padding:0 4px;
+    border:1px solid rgba(255,255,255,0.5);
 }
 
 .body {
@@ -72,7 +81,7 @@
 .flags {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 9px;
     align-items: center;
 }
 
@@ -88,7 +97,7 @@
 .scores {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     text-align: right;
     font-size: 14px;
 }
@@ -97,11 +106,12 @@ p {
     font-size: 12px;
     margin-top: 10px;
     color: #666;
+    width:15vw;
 }
 
 button {
-    margin: 15px 0;
-    padding: 10px;
+    margin: 12px 0;
+    padding: 8px;
     color: #0056b3;
     border: 1px solid grey;
     background-color: white;
@@ -114,9 +124,6 @@ button {
     }
 }
 
-/* button:hover {
-    background-color: #0056b3;
-} */
 
 hr {
     border: 0;
@@ -124,6 +131,35 @@ hr {
     background-color: #e0e0e0;
     margin: 15px 0;
 }
+
+/* -----scroll-property---- */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+}
+
+.top-section:hover::-webkit-scrollbar-thumb {
+    background: #717171;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+
+
+
+
 
 
 
@@ -163,10 +199,16 @@ hr {
     font-size:1.5rem;
 }
 
+.menu-bar{
+    width: 66%;
+    border-left: 1px solid;
+    padding-left: 50px;
+}
+
 .menu-bar ul{
     display:flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 30px;
     margin-right:8rem;
 }
 
@@ -277,7 +319,8 @@ hr {
     gap: 20px;
 
     img{
-        width: 100px;
+        width: 70px;
+        height: 70px;
         background-color: white;
         border-radius: 50%;
         padding: 10px;
