@@ -5,11 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 body{
-    width:100vw;
-    height:100%;
-    overflow-x: hidden; 
+    max-width: 100%;
+    height: 100%;
     font-family: "Poppins", sans-serif;
 }
 
@@ -20,16 +20,16 @@ body{
     /* flex-wrap: wrap; */
     gap: 18px;
     justify-content: space-around; 
-    height:30vh;
-    width:100vw;
-    overflow-x: scroll;
+    max-height:32vh;
+    max-width:100%;  
+    overflow-x: auto;
     overflow-y:hidden;
 }
 .box{
     background-color: white;
     border-radius: 10px;
     padding: 2px;
-    width: 23vw;
+    max-width: 23vw;
     flex: 0 0 23vw;
     display: flex;
     flex-direction: column;
@@ -142,8 +142,8 @@ hr {
 /* -----scroll-property---- */
 
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 3px;
+    width: 7px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -286,7 +286,7 @@ hr {
     display: flex;
     gap: 20px; 
     padding-left: 21px;
-    overflow-x: auto; 
+    overflow-x: scroll;  /*change from auto*/
     width: 99vw;
     scroll-behavior: smooth;
     position: absolute; /* this is absolute within the hero-section */
@@ -486,6 +486,7 @@ hr {
 .button{
     position:relative;
     left:50%;
+    width:10vw;
    justify-self: center;
    margin-top: -50px;
    
@@ -516,23 +517,35 @@ hr {
     text-transform: uppercase;
     padding:50px 20px 20px 20px;
 }
-.men-rank{
-    display:flex;
-    justify-content: space-around;
-}
+
 
 .women-rank{
     display: flex;
     justify-content: flex-start;
     gap:40px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    margin: 0 20px;
 }
 
-.table{
-    border:2px solid #DCE0E2;
+
+
+
+
+
+.men-rank {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 0 20px;
+    overflow-x: hidden; /* Default to no scrolling */
+}
+
+/* Ensure the table has a fixed width */
+.table {
+    border: 2px solid #DCE0E2;
     display: flex;
     flex-direction: column;
-    min-width:440px;
+    width: 440px; /* Fixed width */
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -622,7 +635,8 @@ hr {
 .icctv,.family{
     display:flex;
     background-color: #00175F;
-    height:70vh;
+    /* height:70vh; */
+    padding:30px 0;
 }
 
 
@@ -674,10 +688,9 @@ hr {
 }
 
 .image-tv img{
-    height: 56vh;
+    height: 100%;
     width:55vw;
     
-
 }
 
 
@@ -710,6 +723,7 @@ hr {
 .album-phots{
     position:relative;
     border-radius: 10px;
+    width:fit-content;
     
 }
 
@@ -742,6 +756,7 @@ hr {
 
 #large{
     height: 630px;
+    width:46vw;
 }
 
 .box-1{
@@ -821,6 +836,10 @@ hr {
 
 .headlines {
     margin: 0; /* Removes default margin */
+    overflow-wrap: break-word; /* Ensures long text breaks to avoid overflow */
+    word-wrap: break-word; /* Older property for better compatibility */
+    white-space: normal; /* Ensures the text wraps within the container */
+    max-width:20vw;
 }
 
 
@@ -846,7 +865,7 @@ hr {
 .awards{
     background-color: black;
     position: relative;
-    height:110vh;
+    /* height:110vh; */
     display:flex;
     flex-direction: column;
     h1{
@@ -867,8 +886,8 @@ hr {
 .a-img{
     position:absolute;
     /* top:0; */
-    height:150vh;
-    width:80vw;
+    /* height:150vh; */
+    width:100%;
 }
 
 .winners{
@@ -970,7 +989,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    /* height: 80vh; */
     background-color: #000;
     /* font-family: Arial, sans-serif; */
 }
@@ -1136,3 +1155,420 @@ hr {
         padding-bottom:40px;
     }
 }
+
+/*----responsive-------*/
+
+@media screen and (max-width:1274px){
+    .search{
+        padding-left: 0;
+    }
+
+    .image-tv img{
+        /* width: fit-content; */
+    }
+
+    #virat{
+        width: fit-content;
+    }
+
+    .winners-card{
+        gap:20px;
+    }
+
+    .family{
+        margin-top:30px;
+    }
+}
+@media screen and (max-width:1250px){
+    .top-section{
+        max-height:50vh;
+    }
+
+    .search{
+        padding-left: 0;
+    }
+
+    .hero-image{
+        margin-right:2vw;
+    }
+
+    .men-rank {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding: 0 10px; /* Optional: add padding if needed */
+    }
+
+    .table {
+        width: 440px; /* Ensure the width remains fixed */
+    }
+
+
+
+    .icctv,.family{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tv-content{
+        align-items: center;
+
+        .para-tv{
+            text-align: center;
+        }
+    }
+
+    .news{
+        background:none;
+        & > img{
+            display: none;
+        }
+    }
+
+    .tv-content{
+        padding: 22px;
+    }
+    .awards{
+        h1{
+            font-size: 26px;
+            text-align: left;
+            line-height: 24px;
+        }
+    }
+    .winr-cards{
+        height:50vh;
+    }
+    .winners-card{
+        gap:20vw;
+    }
+
+    .advertisement{
+        display: none;
+    }
+    
+}
+
+@media (max-width:890px){
+
+    .hero-section{
+        height: 114vh;
+    }
+    .menu-bar{
+        width:60vw;
+    }
+
+    .content {
+        transform: scale(0.5); /* Scale everything down by 50% */
+        transform-origin: top left; /* Keep scaling consistent from top left */
+        width: 100%;
+        bottom: 200px;
+    }
+
+    .videos{
+        h2{
+            font-size: 2rem;
+        }
+
+        nav{
+            font-size: 12px;
+        }
+    }
+
+    .img{
+        max-width: 30vw;
+        flex: 0 0 30vw;
+        bottom:-30px;
+        height: 70%;
+    }
+
+
+
+    .cards{
+        min-width:370px;
+        height:244px;
+
+        h2{
+            line-height: 34px;
+        }
+    }
+
+    .videos-part {
+        height: 75%;  /* Set the height to 60% of its original value */
+        width: 100%;  /* Ensure the width stays at 100% */
+        padding-top: 45px;
+    }
+
+    .video {
+        height: 300px; /* Scale down individual video height (adjust as needed) */
+        width: 27vw;   /* Keep the original width of videos */
+    }
+
+    .video img {
+        height: 100%;  /* Adjust the image height within the video */
+        width: 100%;   /* Maintain the image width to fill the container */
+    }
+    .v-para span {
+        font-size: 7px; /* Half of 14px */
+    }
+
+    .v-para h2 {
+        font-size: 9px; /* Half of 18px */
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .video i{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:786px){
+
+    .top-section{
+        .box{
+            max-width: 70vw;
+            flex:0 0 70vw;
+
+            .date p{
+                width: fit-content;
+            }
+        }
+    }
+
+
+    .hero-image{
+        margin:0 6px;
+    }
+
+    .img{
+        max-width: 50vw;
+        flex: 0 0 50vw;
+        bottom:-30px;
+    }
+
+    .images{
+        padding-left: 5px;
+    }
+
+
+
+    .sticky {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .logo {
+        gap: 10px; /* Reduce gap between logo and bars */
+    }
+
+
+    .videos{
+        h2 {
+            font-size: 15px;
+        }
+    
+
+        nav{
+            font-size: 8px;
+        }
+    }
+
+    .menu-bar ul {
+        justify-content: flex-end;
+        align-items: center; /* Center align items */
+        gap: 10px; /* Reduce gap between items */
+        margin: 0; /* Remove any margins */
+        width: 100%; /* Ensure the menu bar takes full width */
+    }
+
+    .search {
+        font-size: 12px; /* Slightly larger font size for better visibility */
+        gap: 15px; /* Adjust gap */
+    }
+
+    .search {
+        order: 1; /* Move search to the top */
+        padding-left: 0; /* Remove padding-left */
+        justify-content: flex-start; /* Align to the left */
+    }
+
+    .del{
+        display:none;
+    }
+}
+
+
+
+@media(max-width:450px){
+
+    .top-section{
+        .box{
+            max-width: 88vw;
+            flex:0 0 88vw;
+
+            .date p{
+                width: fit-content;
+            }
+        }
+    }
+
+    .logo a img{
+        width:10vw;
+    }
+
+    .hero-image{
+        margin:0 6px;
+    }
+
+    .img{
+        max-width: 65vw;
+        flex: 0 0 65vw;
+    }
+
+
+
+    .videos{
+        h2{
+            font-size: 1.5rem;
+        }
+
+        nav{
+            font-size: 8px;
+        }
+    }
+
+    .video{
+        h2{
+            font-size: 10px;
+        }
+
+        .v-para{
+            padding:0 5px 3px 3px;
+            border-radius: 10px;
+        }
+    }
+
+    .button button{
+        padding:5px 30px;
+    }
+
+
+    .rankings{
+        .men,.women{
+            font-size: 26px;
+            padding-bottom: 2px;
+        }
+
+        /* .men-rank{
+            overflow-x: scroll;
+        } */
+    }
+
+    .image-tv{
+        #virat{
+            width:400px;
+        }
+    }
+
+
+    .news{
+
+        .half{
+            background: none;
+            .button button{
+                padding:5px 30px;
+            }
+        }
+    }
+
+    .c {
+        width: 150px; /* Scale down width to half */
+        height: 18rem; /* Scale down height to half */
+    }
+
+    .runs {
+        padding: 5px; /* Reduce padding */
+    }
+
+    .run, .mtch {
+        gap: 5px; /* Reduce gap between items */
+    }
+
+    .run span:first-child, .mtch span:first-child {
+        font-size: 14px; /* Scale down font size */
+    }
+
+    .run span:last-child, .mtch span:last-child {
+        font-size: 8px; /* Scale down font size for smaller text */
+    }
+
+    .run {
+        border-right: none; /* Remove border on smaller screens if necessary */
+    }
+
+    .name {
+        padding-top: 0; /* Reduce padding */
+    }
+
+    .name h3 {
+        font-size: 10px; /* Scale down the font size */
+    }
+
+    .name .fi {
+        padding-top: 2px; /* Reduce padding for .fi */
+        font-size: 1rem; /* Scale down the font size */
+    }
+
+    .aw{
+        .button button{
+            padding:5px 30px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .values {
+            font-size: 10px;
+        }
+    
+        .footer-hr {
+            width: 30%;
+        }
+    
+        .p-logos img {
+            width: 100px;
+            height: 30px;
+        }
+    
+        .p-logos-sm img {
+            width: 80px;
+            height: 24px;
+        }
+    
+        .all-supports {
+            gap: 20px;
+        }
+    
+        .social-media {
+            font-size: 0.8rem;
+        }
+    
+        .social-icons i {
+            padding: 8px;
+        }
+    
+        .terms {
+            font-size: 8px;
+            gap: 15px;
+        }
+    
+        .copyright img {
+            width: 40px;
+            height: 16px;
+        }
+    
+        .copyright p {
+            padding-bottom: 20px;
+        }
+    }
+    
+    
+}
+
