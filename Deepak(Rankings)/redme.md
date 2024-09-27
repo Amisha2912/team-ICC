@@ -23,4 +23,4 @@ This project is a simple **News Page** that displays live match updates and spor
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/news-page.git
+   git clone https://github.com/Amisha2912/team-ICC
