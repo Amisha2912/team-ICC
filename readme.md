@@ -4,7 +4,6 @@
 Welcome to the **ICC WEBSITE Clone** project. This project is a replica of the official [ICC website](https://www.icc-cricket.com/), created as part of our participation in the Geekathon. Our goal was to replicate the website as closely as possible, using only **HTML** and **CSS**. 
 
  We aimed to showcase our web development skills by accurately cloning the structure, design, and key features of the ICC website.
-This project was provided to test the skills and creativity of members against what has been covered in this modules.
 
 This project was assigned by Geekster as a Major Project for a team of 4 members:
 
@@ -15,8 +14,7 @@ This project was assigned by Geekster as a Major Project for a team of 4 members
 
 ## 🚀 Features
 - **Cricket Rankings:** Provides up-to-date team rankings for both men's and women's cricket.
-- **Latest News & Updates:** Showcases the latest cricket news and match highlights.
-- **Videos Section:** Features videos covering cricket matches and exclusive interviews.
+- **Latest News & Updates:** Showcases the cricket news and match highlights.
 - **Awards & Achievements:** Highlights notable cricket awards and achievements.
 - **Responsive Design:** Ensures seamless browsing across various devices, including desktops, tablets, and smartphones.
 
@@ -32,25 +30,25 @@ The ICC Website Clone includes the following key sections:
 * Travel
 * Team
 
-## 🟢 Acknowledgement
+## &#9654; Acknowledgement
 We would like to express our gratitude to everyone who contributed to the development of this ICC website clone project.
 
-## 🟢 Project Contributors
+## &#9654; Project Contributors
   1. **<u>Amisha</u>** (CAPTAIN)
   2. **Deepak**
   3. **Atif Mustafa**
   4. **Pawan Kumar**
 
-## 🟢 Project Lead
+## &#9654; Project Lead
 **<u>Amisha</u>**: Responsible for overseeing the development and ensuring alignment with the original ICC website's vision.
 
-## 🟢 Special Thanks
+## &#9654; Special Thanks
 We extend our gratitude to the original **ICC website development team** for creating an inspiring website that served as the foundation for this project.
 
 ### Special Thanks to Our Mentor:
 I would like to extend my heartfelt gratitude to **<u>Abhinandan Kumar</u>**, our project mentor, for his guidance and support throughout the development of this project.
 
-## 🟢 Learning Resources
+## &#9654; Learning Resources
 A heartfelt thank you to Geekster for providing invaluable learning resources that equipped us with the skills and knowledge necessary for the successful completion of this project.
 
 ## 🎯 Contributing
