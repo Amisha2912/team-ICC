@@ -43,4 +43,4 @@ A heartfelt thank you to **Geekster** for providing invaluable learning resource
 
 Here is a screenshot of the ICC website project:
 
-![ICC TeamsPage](./images/ss.jpg)
+![ICC TeamsPage](./images/ss.png)
