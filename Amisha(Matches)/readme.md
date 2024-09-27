@@ -24,7 +24,14 @@ I would like to express my gratitude to everyone who contributed to the developm
 ### Project Mentor
 I would like to sincerely thank **<u>Abhinandan Kumar</u>**, our project mentor, for his constant guidance and support throughout the completion of the ICC website clone project. His advice and encouragement were crucial in helping us complete the project successfully.
 
+
 ### Learning Resources
 A heartfelt thank you to **Geekster** for providing invaluable learning resources that equipped us with the skills and knowledge necessary for the successful completion of this project.
 
+
 ## 💥 Project Output
+
+Here is a screenshot of the ICC Match-Section:
+
+![ICC Matches](./images/ss-1.jpg)
+
