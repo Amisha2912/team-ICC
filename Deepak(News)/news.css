@@ -1,13 +1,7 @@
 body{
     background-color: rgb(255, 255, 255);
+    /* overflow: hidden; */
 }
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/* AMISH */
-
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +10,7 @@ body{
 body{
     width:100vw;
     height:100%;
-    /* overflow-x: hidden;  */
+    overflow-x: hidden; 
 }
 
 /*-----header section------*/
@@ -59,22 +53,11 @@ body{
     display: flex;
     flex-direction:column;
     gap: 6px;
-    .test{
-        color:green;
-    }
-    .t20{
-        color:purple
-    }
-    .odi{
-        color:skyblue;
-    }
 }
-
 .status span {
     padding: 5px 10px;
     font-size: 12px;
     font-weight: bold;
-
 }
 
 .body {
@@ -96,8 +79,6 @@ body{
     width: 40px;
     height:20px;
 }
-
-
 
 .scores {
     display: flex;
@@ -121,16 +102,12 @@ button {
     background-color: white;
     border-radius: 30px;
     cursor: pointer;
-
-    span{
-        font-weight: 900;
-        padding-left:10px;
-    }
 }
 
-/* button:hover {
-    background-color: #0056b3;
-} */
+button span{
+    font-weight: 900;
+    padding-left:10px;
+}
 
 hr {
     border: 0;
@@ -139,6 +116,36 @@ hr {
     margin: 15px 0;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box {
+        width: 40vw;
+        flex: 0 0 40vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 80vw;
+        flex: 0 0 80vw;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .body {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 
