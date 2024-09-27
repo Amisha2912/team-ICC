@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rajdhani, Arial, Helvetica, Sans-serif;
+}
+
+header {
+    background-color: #011037;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    justify-content: space-between;
+}
+
+.hidden{
+    display: none;
+}
+
+.nav-list {
+    padding-left: 80px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    gap: 30px;
+    /* flex-shrink: 0; */
+    flex-wrap: wrap;
+}
+
+.nav-list ul li {
+    list-style: none;
+    color: white;
+    font-size: 12px;
+}
+
+.logo a img {
+    height: auto;
+    width: 200px;
+}
+
+main {
+    margin: 0 60px;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.inside-main-container h1 {
+    font-size: 3em;
+    color: #011037;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.inside-main-container h2 {
+    font-size: 1.5em;
+    color: #15baf2;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.inside-main-container p {
+    margin: 0 0 1em 0;
+    font-family: "Hind Siliguri", Arial, Helvetica, sans-serif;
+}
+
+.inside-main-container ul {
+    margin: 1.3em 0 2em;
+    padding: 0 0 0 2em;
+}
+
+.inside-main-container ul li {
+    margin: 0 0 0.8em 0;
+    list-style: square;
+}
+
+.inside-main-container ul li a {
+    text-decoration: none;
+    color: #011037;
+}
+
+.footer-up {
+    background-image: url(//www.icctravelandtours.com/wp-content/uploads/2018/04/footer-graphic.jpg);
+    height: 70px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer-up .content {
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+footer {
+    background-color: #00165f;
+}
+
+footer .image {
+    padding: 6px;
+}
+
+footer .image img {
+    width: 80%;
+    height: auto;
+}
+
+.footer-subcontainer-1 {
+    padding: 48px 60px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+footer .sub h5 {
+    color: white;
+    font-family: "Hind Siliguri", Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+footer .sub ul li {
+    list-style: none;
+}
+
+footer .sub ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.footer-container-2 {
+    background-color: #dbe0e4;
+    /* height: 60px; */
+    padding: auto auto;
+}
+
+.footer-container-2 ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 1% 0;
+}
+
+.footer-container-2 ul li a {
+    text-decoration: none;
+    color: #51626f;
+    font-size: 16px;
+    font-family: "Hind Siliguri", Arial, Helvetica, sans-serif;
+}
+
+.footer-container-2 ul .aa {
+    color: #51626f;
+    padding-top: 3px;
+}
+
+/* Responsive Breakpoints */
+
+/* 0-600px */
+@media only screen and (max-width: 600px) {
+    .menu{
+         display: block; 
+       
+        background-color: #15baf2;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 8px 16px;
+        width: 100%;
+        height: 38px;
+    }
+    header{
+        margin-top: 39px;
+    }
+    .logo{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .nav-list {
+        display: none;
+    }
+    
+    main {
+        margin: 0 10px;
+    }
+    .inside-main-container h1 {
+        font-size: 3em;
+        line-height: 1;
+    }
+    .inside-main-container h2 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+  
+    .footer-subcontainer-1 {
+        /* grid-template-columns: repeat(2, 1fr); */
+        display: block;
+        padding: 48px 0 15px 20px;
+    }
+    
+    .sub{
+        padding: 6px;
+        margin-bottom: 11px;
+    }
+    footer .sub ul li a, footer h5{
+        font-size: 12px;
+    }
+    
+    .footer-container-2{
+        padding: 16px 0;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+}
+
+/* 601-768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  
+    .menu{
+        display: none; 
+ 
+   }
+   header{
+       margin-top: 39px;
+   }
+    .logo a img{
+       width: 140px;
+   } 
+   .nav-list {
+       display: none;
+   }
+   
+   main {
+       margin: 0 10px;
+   }
+   .inside-main-container h1 {
+       font-size: 36px;
+       line-height: 1;
+   }
+   .inside-main-container h2 {
+       font-size: 18px;
+       line-height: 1.5;
+   }
+
+   .inside-main-container ul li a{
+    font-size: 12px;
+   }
+ 
+   .footer-subcontainer-1 {
+     
+       padding: 48px 0 15px 20px;
+   }
+   
+   .sub{
+       padding: 6px;
+       /* margin-bottom: 11px; */
+   }
+   footer .sub h5{
+    margin-bottom: 15px;
+   }
+       
+   footer .sub ul li a, footer h5{
+       font-size: 10px;
+   }
+   
+   .footer-container-2{
+       padding: 16px 0;
+       font-size: 12px;
+       ul{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 15px;
+
+         
+       }
+       ul li a{
+        font-size: 12px;
+       }
+   }
+   
+  
+}
+
+/* 769-1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .menu{
+        display: none; 
+ 
+   }
+ 
+    .logo a img{
+       width: 140px;
+   } 
+   /* .nav-list {
+       display: none;
+   } */
+   
+   main {
+       margin: 0 10px;
+   }
+   .inside-main-container h1 {
+       font-size: 36px;
+       line-height: 1;
+   }
+   .inside-main-container h2 {
+       font-size: 18px;
+       line-height: 1.5;
+   }
+
+   .inside-main-container ul li a{
+    font-size: 12px;
+   }
+ 
+   .footer-subcontainer-1 {
+     
+       padding: 36px 0 15px 20px;
+   }
+   
+   .sub{
+       padding: 6px;
+       /* margin-bottom: 11px; */
+   }
+   footer .sub h5{
+    margin-bottom: 15px;
+   }
+       
+   footer .sub ul li a, footer h5{
+       font-size: 10px;
+       font-weight: 600;
+   }
+   
+   .footer-container-2{
+       padding: 16px 0;
+       font-size: 12px;
+       ul{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 15px;
+
+         
+       }
+       ul li a{
+        font-size: 12px;
+       }
+   }
+   
+}
+
+
